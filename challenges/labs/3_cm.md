@@ -2,7 +2,9 @@
 ```bash
 sudo su - hdfs
 hdfs dfs -mkdir /user/nimbus
+hdfs dfs -chown -R nimbus:hdfs /user/nimbus
 hdfs dfs -mkdir /user/igneous
+hdfs dfs -chown -R igneous:hdfs /user/igneous
 ```
 
 * The command and output for hdfs dfs -ls /user
