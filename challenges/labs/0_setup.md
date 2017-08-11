@@ -32,13 +32,13 @@
 
 * List the command and output for yum repolist enabled
   ```
-[root@ip-172-31-23-52 ~]# yum repolist enabled
-Loaded plugins: amazon-id, rhui-lb, search-disabled-repos, security
-repo id                                          repo name                                                                      status
-rhui-REGION-client-config-server-6               Red Hat Update Infrastructure 2.0 Client Configuration Server 6                     8
-rhui-REGION-rhel-server-releases                 Red Hat Enterprise Linux Server 6 (RPMs)                                       19,617
-rhui-REGION-rhel-server-rh-common                Red Hat Enterprise Linux Server 6 RH Common (RPMs)                                129
-repolist: 19,754
+  [root@ip-172-31-23-52 ~]# yum repolist enabled
+  Loaded plugins: amazon-id, rhui-lb, search-disabled-repos, security
+  repo id                                          repo     name                                                                      status
+  rhui-REGION-client-config-server-6               Red Hat Update Infrastructure 2.0 Client     Configuration Server 6                     8
+  rhui-REGION-rhel-server-releases                 Red Hat Enterprise Linux Server 6    (RPMs)                                       19,617
+  rhui-REGION-rhel-server-rh-common                Red Hat Enterprise Linux Server 6 RH Common    (RPMs)                                129
+  repolist: 19,754
   ```
 
 ## Creatation of Users
