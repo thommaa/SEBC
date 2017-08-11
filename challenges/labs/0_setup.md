@@ -32,3 +32,26 @@ rhui-REGION-rhel-server-releases                 Red Hat Enterprise Linux Server
 rhui-REGION-rhel-server-rh-common                Red Hat Enterprise Linux Server 6 RH Common (RPMs)                                129
 repolist: 19,754
 ```
+
+## Creatation of Users
+* Create users and groups
+```
+sudo useradd -u 2800 nimbus
+sudo useradd -u 2900 igneous
+sudo groupadd rocks
+sudo groupadd clouds
+sudo usermod -a -G rocks igneous
+sudo usermod -a -G clouds nimbus
+```
+* List the /etc/passwd entries for nimbus and igneous
+```
+nimbus:x:2800:2800::/home/nimbus:/bin/bash
+igneous:x:2900:2900::/home/igneous:/bin/bash
+```
+* List the /etc/group entries for rocks and clouds
+```
+nimbus:x:2800:
+igneous:x:2900:
+rocks:x:2901:igneous
+clouds:x:2902:nimbus
+```
