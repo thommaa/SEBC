@@ -25,6 +25,7 @@ drwxrwxr-x   - impala impala              0 2017-08-11 05:29 /user/impala
 drwxr-xr-x   - hdfs   supergroup          0 2017-08-11 05:32 /user/nimbus
 drwxrwxr-x   - oozie  oozie               0 2017-08-11 05:29 /user/oozie
 ```
+@mfernest: The owner:group assignments on `igneous` and `nimbus` aren't changed as the commands above imply.
 
 * The command and output from the CM API call ../api/v14/hosts
 ```
